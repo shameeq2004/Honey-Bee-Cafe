@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoneyBee Cafe Menu</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fffbee;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #4b2c20;
+            margin: 0;
+        }
+        header p {
+            color: #5e3b2c;
+            font-style: italic;
+            margin: 0;
+        }
+        .company-name {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 5px;
+            color: #444;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .category {
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .category h2 {
+            color: #e69500;
+            font-size: 1.4em;
+            border-bottom: 2px solid #e69500;
+            padding-bottom: 5px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+        }
+        .note {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .qr-code {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+	<div style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="Burger.jpeg" alt="Left Image" width="250" height="250">
+    <img src="Milk.jpeg" alt="Middle Image" width="200" height="200">
+    <img src="sandwich.jpeg" alt="Right Image" width="250" height="250">
+	</div>
+        <h1>HoneyBee Cafe</h1>
+        <p>The sweetest buzz on earth</p>
+        <div class="company-name">Powered by Shameeq Global</div>
+    </header>
+
+    <div class="menu">
+        <div class="category">
+            <h2>Hot Beverages</h2>
+            <div class="item"><span>Tea</span><span>10</span></div>
+            <div class="item"><span>Coffee</span><span>10</span></div>
+            <div class="item"><span>Black Tea</span><span>10</span></div>
+            <div class="item"><span>Black Coffee</span><span>10</span></div>
+            <div class="item"><span>Lemon Tea</span><span>10</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Fresh Juices</h2>
+            <div class="item"><span>Fresh Lemon Juice</span><span>20</span></div>
+            <div class="item"><span>Fresh Mint Lemon Juice</span><span>30</span></div>
+            <div class="item"><span>Fresh Ginger Lime</span><span>30</span></div>
+            <div class="item"><span>Fresh Watermelon</span><span>30</span></div>
+            <div class="item"><span>Fresh Pineapple Juice</span><span>40</span></div>
+            <div class="item"><span>Fresh Grape Juice</span><span>40</span></div>
+            <div class="item"><span>Fresh Strawberry Lime</span><span>40</span></div>
+            <div class="note">(Fruits subject to seasonal availability)</div>
+        </div>
+
+        <div class="category">
+            <h2>Mojito</h2>
+            <div class="item"><span>Blue Lime Mojito</span><span>40</span></div>
+            <div class="item"><span>Blue Berry Mojito</span><span>40</span></div>
+            <div class="item"><span>Litchi Lime Mojito</span><span>40</span></div>
+            <div class="item"><span>Masala Sprite</span><span>40</span></div>
+            <div class="item"><span>Lemon Iced Tea</span><span>50</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Soda</h2>
+            <div class="item"><span>Lemon Soda (Sweet/Salt)</span><span>30</span></div>
+            <div class="item"><span>Masala Soda</span><span>30</span></div>
+            <div class="item"><span>Mint Soda</span><span>30</span></div>
+            <div class="item"><span>Ginger Soda</span><span>30</span></div>
+            <div class="item"><span>Pepper Soda</span><span>30</span></div>
+            <div class="item"><span>Mirchi Soda</span><span>30</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Milk Shakes</h2>
+            <div class="item"><span>Cold Coffee</span><span>50</span></div>
+            <div class="item"><span>Chocolate Shake</span><span>50</span></div>
+            <div class="item"><span>Banana Shake</span><span>50</span></div>
+            <div class="item"><span>Cold Boost</span><span>50</span></div>
+            <div class="item"><span>Vanilla Shake</span><span>50</span></div>
+            <div class="item"><span>Rose Milk Shake</span><span>50</span></div>
+            <div class="item"><span>Strawberry Shake</span><span>60</span></div>
+            <div class="item"><span>Tender Coconut Shake</span><span>60</span></div>
+            <div class="item"><span>Badam Shake</span><span>70</span></div>
+            <div class="item"><span>Dry Fruit Shake</span><span>70</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Sandwich</h2>
+            <div class="item"><span>Mixed Veg Sandwich</span><span>50</span></div>
+            <div class="item"><span>Corn Sandwich</span><span>60</span></div>
+            <div class="item"><span>Paneer Sandwich</span><span>60</span></div>
+            <div class="item"><span>Cheese Sandwich</span><span>70</span></div>
+            <div class="item"><span>Chicken Sandwich</span><span>70</span></div>
+            <div class="item"><span>Tandoori Chicken Sandwich</span><span>80</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Burgers</h2>
+            <div class="item"><span>Veg Patty Burger</span><span>60</span></div>
+            <div class="item"><span>Veg Mayo Burger</span><span>60</span></div>
+            <div class="item"><span>Paneer Burger</span><span>60</span></div>
+            <div class="item"><span>Chicken Burger</span><span>80</span></div>
+            <div class="item"><span>Chicken Crunch Burger</span><span>90</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Maggi</h2>
+            <div class="item"><span>Plain soupy Maggi</span><span>50</span></div>
+            <div class="item"><span>Mixed Veg Maggi</span><span>50</span></div>
+            <div class="item"><span>Corn Maggi</span><span>60</span></div>
+            <div class="item"><span>Mushroom Maggi</span><span>70</span></div>
+            <div class="item"><span>Butter Corn Maggi</span><span>70</span></div>
+            <div class="item"><span>Paneer Maggi</span><span>70</span></div>
+            <div class="item"><span>Cheese Maggi</span><span>70</span></div>
+            <div class="item"><span>Chicken Maggi</span><span>70</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Pasta & Noodles</h2>
+            <div class="item"><span>Veg Noodles</span><span>50</span></div>
+            <div class="item"><span>Veg Fried Rice</span><span>50</span></div>
+            <div class="item"><span>Chicken Noodles</span><span>70</span></div>
+            <div class="item"><span>Chicken Fried Rice</span><span>70</span></div>
+            <div class="item"><span>Mushroom Fried Rice</span><span>70</span></div>
+            <div class="item"><span>Paneer Fried Rice</span><span>70</span></div>
+            <div class="item"><span>Red Sauce Pasta</span><span>70</span></div>
+	    <div class="item"><span>White Sauce Pasta</span><span>80</span></div>
+	    <div class="item"><span>Chicken Pasta</span><span>90</span></div>
+        </div>
+
+
+        <div class="category">
+            <h2>Rolls</h2>
+            <div class="item"><span>Veg Roll</span><span>50</span></div>
+            <div class="item"><span>Paneer Roll</span><span>60</span></div>
+            <div class="item"><span>Chicken Roll</span><span>70</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Fries</h2>
+            <div class="item"><span>Salty Fries</span><span>60</span></div>
+            <div class="item"><span>Peri-Peri Fries</span><span>70</span></div>
+            <div class="item"><span>Aloo Tikki (3pcs)</span><span>50</span></div>
+            <div class="item"><span>Chilly Garlic Nuggets</span><span>50</span></div>
+            <div class="item"><span>Cutlet (2 pcs)</span><span>60</span></div>
+        </div>
+
+        <div class="category">
+            <h2>Snax</h2>
+            <div class="item"><span>Vada Pav</span><span>40</span></div>
+            <div class="item"><span>Pav Bhaji</span><span>70</span></div>
+            <div class="item"><span>Cheesy Pav Bhaji</span><span>80</span></div>
+        </div>
+    </div>
+		
+		<div class="company-name">Powered by Shameeq Global</div>	
+    </div>
+</body>
+</html>
